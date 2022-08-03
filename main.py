@@ -1,9 +1,7 @@
 import math
 
-from functions import add_em
-from functions import get_number
+# Goal: write a function that, given a number,
+# returns either a factor of that number other than 1,
+# OR if no factor is found, returns the number itself
+# as a way of signalling that the nunber is prime
 
-x = get_number("enter first number: ")
-y = get_number("enter second number: ")
-
-print("add_em(x,y)=",add_em(x,y)) 

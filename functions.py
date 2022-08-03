@@ -20,3 +20,19 @@ def larger(a,b):
 
 def get_number(prompt):
   return float(input(prompt))
+
+def first_factor_found(my_number):
+  """
+  if number is prime, just return the number
+  otherwise return the first factor other than 1
+  that can be found (smallest factor)
+  """
+  
+  for i in range(2, factor_limit(my_number) + 1):
+    if my_number % i == 0:
+      return i
+  
+  return my_number
+
+def is_prime(number):
+  return first_factor_found(number)==number
